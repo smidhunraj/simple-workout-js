@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>POwer of a number</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script >
+    const power=function(base,exp){
+    let i=0;
+    let powervalue=1;
+    for(i=0;i<Number(exp);i++){
+     powervalue  *= Number(base);
+    }
+    return powervalue;
+    }
+   
+    </script>
+</head>
+<body>
+    <span>Enter the base</span><input type="number" id="base"></input><br>
+    <span>Enter the exponent</span><input type="number" id="exp"></input>
+    <button onclick="alert(power(document.getElementById('base').value,document.getElementById('exp').value))" >Find the power</button> 
+</body>
+</html>
